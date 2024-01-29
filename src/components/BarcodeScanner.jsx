@@ -60,7 +60,8 @@ const BarcodeScanner = () => {
   };
 
   return (
-    <div>
+    
+    <div className='scanner'>
       <div id="scanner-container" style={{ width: '640px', height: '480px' }} />
       {barcode && <p>Code-Barres: {barcode}</p>}
       {productInfo && <div>
