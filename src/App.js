@@ -1,10 +1,10 @@
 import './App.css';
-import BarcodeScanner from './components/BarcodeScanner'
+import Modal from './components/Modal'
 
 function App() {
   return (
     <div className="App">
-      <BarcodeScanner />
+      <Modal />
     </div>
   );
 }

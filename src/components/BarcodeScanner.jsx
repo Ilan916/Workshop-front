@@ -5,6 +5,8 @@ import axios from 'axios';
 const BarcodeScanner = () => {
   const [barcode, setBarcode] = useState('');
   const [productInfo, setProductInfo] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
 
   useEffect(() => {
     Quagga.init({
