@@ -91,6 +91,7 @@ const BarcodeScanner = () => {
             align="left"
             value={`Nom: ${productInfo.name}\nDescription: ${productInfo.description}\nCatégorie: ${productInfo.category}\nIngrédients: ${productInfo.ingredients}`}
             wrap-count="40"
+            font-size="2.5"
           />
         </a-scene>
       )}
