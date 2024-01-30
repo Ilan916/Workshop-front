@@ -68,14 +68,6 @@ const BarcodeScanner = () => {
         style={{ width: "640px", height: "480px", backgroundColor: "black" }}
       />
       {barcode && <p>Code-Barres: {barcode}</p>}
-<<<<<<< Updated upstream
-      {productInfo && <div className='text-white'>
-        <h3>Informations sur le Produit</h3>
-        <p>Nom du Produit: {productInfo.product_name}</p>
-        {/* Vous pouvez ajouter plus d'informations du produit ici */}
-      </div>}
-      {!productInfo && barcode && <p className='text-white'>Aucune information trouvée pour ce produit.</p>}
-=======
       {productInfo && (
         <div>
           <h3>Informations sur le Produit</h3>
@@ -88,7 +80,6 @@ const BarcodeScanner = () => {
       {!productInfo && barcode && (
         <p>Aucune information trouvée pour ce produit.</p>
       )}
->>>>>>> Stashed changes
     </div>
   );
 };
