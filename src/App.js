@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Landing, News, Search } from './pages';
 import { BarCodeScanner } from './components';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
