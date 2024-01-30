@@ -6,16 +6,18 @@ import Footer from './components/Footer';
 
 
 function App() {
+  const currentPage = window.location.pathname; 
+  const navigation = [
+    { name: "Accueil", href: "/" },
+    { name: "Recherche Maps", href: "/gps" },
+    { name: "Barre code", href: "/bar" },
+    { name: "Actualités", href: "/news" },
+  ];
   return (
     <Router>
-      <Header
-        navigation={[
-          { name: "Home", href: "/" },
-          { name: "GPS", href: "/gps" },
-          { name: "Barcode Scanner", href: "/bar" },
-          { name: "News", href: "/news" },
-        ]}
-      />
+      
+      <Header navigation={navigation} currentPage={currentPage} />
+
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/gps" component={Search} />

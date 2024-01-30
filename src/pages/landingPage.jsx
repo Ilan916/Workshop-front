@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import onboarding from "../assets/pol_mar23_011.jpg"
+import Partners from "../components/Partners"
 import {
   AcademicCapIcon,
   CheckCircleIcon,
@@ -11,18 +10,9 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/20/solid'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
-const stats = [
-  { label: 'Business was founded', value: '2012' },
-  { label: 'People on the team', value: '120+' },
-  { label: 'Users on the platform', value: '250k' },
-  { label: 'Paid out to creators', value: '$70M' },
-]
+import Testimony from "../components/testimony"
+import Features from "../components/Features"
+
 const values = [
   {
     name: 'Innovation :',
@@ -31,7 +21,7 @@ const values = [
   },
   {
     name: 'Transparence :',
-    description: 'Nous croyons en une information claire et accessible. Mangi vise à fournir des détails précis sur chaque produit, favorisant une alimentation consciente et éclairée.',
+    description: 'Nous croyons en une information claire et accessible. Manĝi vise à fournir des détails précis sur chaque produit, favorisant une alimentation consciente et éclairée.',
     icon: HandRaisedIcon,
   },
   {
@@ -46,39 +36,29 @@ const values = [
   },
   {
     name: 'Accessibilité mondiale : ',
-    description: "Notre mission est de rendre la réalité augmentée accessible à tous, quel que soit l'endroit dans le monde. Mangi s'efforce d'éliminer les barrières technologiques.",
+    description: "Notre mission est de rendre la réalité augmentée accessible à tous, quel que soit l'endroit dans le monde. Manĝi s'efforce d'éliminer les barrières technologiques.",
     icon: SparklesIcon,
   },
   {
     name: 'Rêver en Technicolor : ',
-    description: "Chez Mangi, nous encourageons chacun à rêver en couleurs vives et à voir le monde de la nourriture avec une perspective éclatante. Notre réalité augmentée n'est pas seulement une technologie, c'est une toile où chaque produit devient une œuvre d'art interactive, éveillant la curiosité et inspirant des choix alimentaires vibrants.",
+    description: "Chez Manĝi, nous encourageons chacun à rêver en couleurs vives et à voir le monde de la nourriture avec une perspective éclatante. Notre réalité augmentée n'est pas seulement une technologie, c'est une toile où chaque produit devient une œuvre d'art interactive, éveillant la curiosité et inspirant des choix alimentaires vibrants.",
     icon: SunIcon,
   },
 ]
-const team = [
-  {
-    name: 'Leslie Alexander',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    location: 'Toronto, Canada',
-  },
-  // More people...
-]
+
 const benefits = [
-  'Competitive salaries',
-  'Flexible work hours',
-  '30 days of paid vacation',
-  'Annual team retreats',
-  'Benefits for you and your family',
-  'A great work environment',
+  'Une équipe passionnée et innovante',
+  'Croissance professionnelle et développement personnel',
+  'Des projets stimulants combinant réalité augmentée et alimentation',
+  'Un environnement de travail collaboratif ',
+  'Des avantages compétitifs ',
+  'Des programmes de bien-être',
 ]
 
 
 export default function LandingPage() {
 
   return (
-    <div className="bg-gray-900">
      
 
       <main className="relative isolate">
@@ -88,12 +68,12 @@ export default function LandingPage() {
         
           <div className="mx-auto max-w-7xl px-6 py-20 sm:py-20 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-6xl lg:col-span-2 xl:col-auto">
+              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-6xl lg:col-span-2 xl:col-auto title-h1">
               Découvrez vos produits avec la réalité augmentée
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-200">
-                Découvrez une nouvelle façon de connaître vos produits alimentaires avec Mangi, notre solution révolutionnaire de réalité augmentée. Plongez dans une expérience immersive où chaque article prend vie grâce à la technologie de pointe.Des détails nutritionnels aux origines du produit, notre application vous offre une vision approfondie pour vous aider à prendre des décisions éclairées.
+                Découvrez une nouvelle façon de connaître vos produits alimentaires avec Manĝi, notre solution révolutionnaire de réalité augmentée. Plongez dans une expérience immersive où chaque article prend vie grâce à la technologie de pointe.Des détails nutritionnels aux origines du produit, notre application vous offre une vision approfondie pour vous aider à prendre des décisions éclairées.
                 </p>
               </div>
               <img
@@ -106,11 +86,11 @@ export default function LandingPage() {
         </div>
 
         {/* Values section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 pb-32">
           <div >
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Nos valeurs</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Découvrez une nouvelle façon de connaître vos produits alimentaires avec Mangi, notre solution révolutionnaire de réalité augmentée. Plongez dans une expérience immersive où chaque article prend vie grâce à la technologie de pointe.
+            Découvrez une nouvelle façon de connaître vos produits alimentaires avec Manĝi, notre solution révolutionnaire de réalité augmentée. Plongez dans une expérience immersive où chaque article prend vie grâce à la technologie de pointe.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
@@ -125,35 +105,14 @@ export default function LandingPage() {
             ))}
           </dl>
         </div>
+        <Features/>
 
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+       <Partners />
+      
 
+       <Testimony/>
 
-        </div>
-
-        {/* Team section */}
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Our team</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in neque vel omnis. Eos error odio. Qui
-              fugit voluptatibus eum culpa.
-            </p>
-          </div>
-          <ul
-            role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-          >
-            {team.map((person) => (
-              <li key={person.name}>
-                <img className="aspect-[14/13] w-full rounded-2xl object-cover" src={person.imageUrl} alt="" />
-                <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-white">{person.name}</h3>
-                <p className="text-base leading-7 text-gray-300">{person.role}</p>
-                <p className="text-sm leading-6 text-gray-500">{person.location}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
+       
 
         {/* CTA section */}
         <div className="relative isolate -z-10 mt-32 sm:mt-40">
@@ -161,14 +120,13 @@ export default function LandingPage() {
             <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
               <img
                 className="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-                src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+                src={onboarding}
                 alt=""
               />
               <div className="w-full flex-auto">
-                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Join our team</h2>
+                <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Rejoindre notre équipe</h2>
                 <p className="mt-6 text-lg leading-8 text-gray-300">
-                  Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-                  in accusamus quisquam.
+                À Manĝi, nous sommes constamment à la recherche de talents exceptionnels pour contribuer à notre aventure. En nous rejoignant, vous bénéficierez :
                 </p>
                 <ul
                   role="list"
@@ -183,7 +141,7 @@ export default function LandingPage() {
                 </ul>
                 <div className="mt-10 flex">
                   <a href="#" className="text-sm font-semibold leading-6 text-indigo-400">
-                    See our job postings <span aria-hidden="true">&rarr;</span>
+                    Voir nos offres de recrutement <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
               </div>
@@ -194,6 +152,5 @@ export default function LandingPage() {
       </main>
 
      
-    </div>
   )
 }
