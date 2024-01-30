@@ -129,7 +129,6 @@ export default function LandingPage() {
                 À Manĝi, nous sommes constamment à la recherche de talents exceptionnels pour contribuer à notre aventure. En nous rejoignant, vous bénéficierez :
                 </p>
                 <ul
-                  role="list"
                   className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-white sm:grid-cols-2"
                 >
                   {benefits.map((benefit) => (
@@ -140,7 +139,7 @@ export default function LandingPage() {
                   ))}
                 </ul>
                 <div className="mt-10 flex">
-                  <a href="#" className="text-sm font-semibold leading-6 text-indigo-400">
+                  <a href="/" className="text-sm font-semibold leading-6 text-indigo-400">
                     Voir nos offres de recrutement <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>

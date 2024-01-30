@@ -111,7 +111,7 @@ export default function Header({ navigation, currentPage }) {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/"
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
                                 'block px-4 py-2 text-sm text-gray-700'
@@ -125,7 +125,7 @@ export default function Header({ navigation, currentPage }) {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/"
                               className={classNames(
                                 active ? 'bg-gray-100' : '',
                                 'block px-4 py-2 text-sm text-gray-700'
@@ -200,7 +200,7 @@ export default function Header({ navigation, currentPage }) {
               <div className="mt-3 space-y-1 px-2">
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  href="/"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Votre profil
@@ -208,7 +208,7 @@ export default function Header({ navigation, currentPage }) {
                
                 <Disclosure.Button
                   as="a"
-                  href="#"
+                  href="/"
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
                 >
                   Se déconnecter
