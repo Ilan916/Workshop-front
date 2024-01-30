@@ -1,13 +1,13 @@
 import onboarding from "../assets/pol_mar23_011.jpg"
 import Partners from "../components/Partners"
 import {
-  AcademicCapIcon,
   CheckCircleIcon,
   HandRaisedIcon,
   RocketLaunchIcon,
   SparklesIcon,
-  SunIcon,
-  UserGroupIcon,
+  EyeIcon,
+  GlobeEuropeAfricaIcon,
+  StarIcon
 } from '@heroicons/react/20/solid'
 
 import Testimony from "../components/testimony"
@@ -22,27 +22,27 @@ const values = [
   {
     name: 'Transparence :',
     description: 'Nous croyons en une information claire et accessible. Manĝi vise à fournir des détails précis sur chaque produit, favorisant une alimentation consciente et éclairée.',
-    icon: HandRaisedIcon,
+    icon: EyeIcon,
   },
   {
     name: 'Engagement envers la qualité : ',
     description: "Nous nous engageons à fournir une expérience utilisateur exceptionnelle. La qualité est notre priorité, de la précision de la reconnaissance des codes-barres à l'affichage en réalité augmentée  ",
-    icon: UserGroupIcon,
+    icon: StarIcon,
   },
   {
     name: 'Respect de la vie privée : ',
     description: ' La confidentialité de vos données est une priorité. Nous nous engageons à protéger vos informations et à garantir une utilisation éthique de la technologie.',
-    icon: AcademicCapIcon,
+    icon: HandRaisedIcon,
   },
   {
     name: 'Accessibilité mondiale : ',
     description: "Notre mission est de rendre la réalité augmentée accessible à tous, quel que soit l'endroit dans le monde. Manĝi s'efforce d'éliminer les barrières technologiques.",
-    icon: SparklesIcon,
+    icon: GlobeEuropeAfricaIcon,
   },
   {
     name: 'Rêver en Technicolor : ',
     description: "Chez Manĝi, nous encourageons chacun à rêver en couleurs vives et à voir le monde de la nourriture avec une perspective éclatante. Notre réalité augmentée n'est pas seulement une technologie, c'est une toile où chaque produit devient une œuvre d'art interactive, éveillant la curiosité et inspirant des choix alimentaires vibrants.",
-    icon: SunIcon,
+    icon: SparklesIcon,
   },
 ]
 
