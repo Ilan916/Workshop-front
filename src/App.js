@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Landing, News, Search } from './pages';
-import { BarCodeScanner } from './components';
-
+import { Landing, News, Search, BarCode } from './pages';
 
 function App() {
   return (
@@ -11,7 +9,7 @@ function App() {
         <Route path="/gps" component={Search} />
         <Route path="/news" component={News} />
 
-        <Route path="/bar" component={BarCodeScanner} />
+        <Route path="/bar" component={BarCode} />
       </Switch>
     </Router>
   );
