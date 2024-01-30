@@ -13,6 +13,7 @@
     "aframe-react": "^4.4.0",
     "autoprefixer": "^10.4.17",
     "axios": "^1.6.7",
+    "face-api.js": "^0.22.2",
     "postcss": "^8.4.33",
     "quagga": "^0.12.1",
     "react": "^18.2.0",
