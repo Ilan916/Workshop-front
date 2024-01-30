@@ -123,7 +123,7 @@ const BarcodeScanner = () => {
             {/* Affiche le nom du produit sur une face du cube */}
             <a-text
               value={`Nom du Produit: ${productInfo.name}`}
-              position="-0.7 0.3 0.5"
+              position="-0.5 0.3 0.5"
               color="black"
               align="left"
               width="1.0"
@@ -132,7 +132,7 @@ const BarcodeScanner = () => {
             {/* Affiche la catégorie du produit sur une autre face du cube */}
             <a-text
               value={`Catégorie: ${productInfo.description}`}
-              position="-0.7 0.1 0.5"
+              position="-0.5 0.1 0.5"
               color="black"
               align="left"
               width="1.0"
