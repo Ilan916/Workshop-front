@@ -8,6 +8,8 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aframe": "^1.5.0",
+    "aframe-react": "^4.4.0",
     "autoprefixer": "^10.4.17",
     "axios": "^1.6.7",
     "postcss": "^8.4.33",
