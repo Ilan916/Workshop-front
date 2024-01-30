@@ -4,6 +4,7 @@ import Quagga from "quagga";
 import axios from "axios";
 import "aframe"; // Importez A-Frame
 
+
 const BarcodeScanner = () => {
   // État pour stocker le code-barres scanné
   const [barcode, setBarcode] = useState("");
@@ -119,7 +120,11 @@ const BarcodeScanner = () => {
       {scanSuccess && (
         <a-scene look-controls>
           <a-marker-camera preset="hiro" />
-          <a-box position="0 0 -5" color="red" scale="2 2 2">
+          <a-box
+            position="0 0 -5"
+            color="red"
+            scale="2 2 2"
+          >
             {/* Affiche le nom du produit sur une face du cube */}
             <a-text
               value={`Nom du Produit: ${productInfo.name}`}
