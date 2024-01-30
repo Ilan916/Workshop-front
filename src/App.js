@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Landing, News, Search } from './pages';
+import { Landing, News, Search, BarCode } from './pages';
 import { BarCodeScanner } from './components';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -21,7 +21,7 @@ function App() {
         <Route path="/gps" component={Search} />
         <Route path="/news" component={News} />
 
-        <Route path="/bar" component={BarCodeScanner} />
+        <Route path="/bar" component={BarCode} />
         <Route path="/news" component={News} />
       </Switch>
       <Footer />

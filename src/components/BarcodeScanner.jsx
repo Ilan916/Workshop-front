@@ -1,33 +1,13 @@
-// Front-end code (BarcodeScanner.js)
+// BarcodeScanner.js
 import React, { useState, useEffect } from "react";
 import Quagga from "quagga";
 import axios from "axios";
 
-const BarcodeScanner = () => {
-  const [barcode, setBarcode] = useState("");
+const BarcodeScanner = ({ onBarcodeDetected }) => {
+  const [barcode, setBarcode] = useState("");  // Définir ici
   const [productInfo, setProductInfo] = useState(null);
 
   useEffect(() => {
-    const handleDetected = (data) => {
-      setBarcode(data.codeResult.code);
-      Quagga.offDetected(); // Stop further scanning after the first successful scan
-      // Send the scanned barcode to your back-end
-      axios
-        .post("http://localhost:3000/product/search-by-barcode", {
-          barcode: data.codeResult.code,
-        })
-        .then((response) => {
-          setProductInfo(response.data);
-        })
-        .catch((error) => {
-          console.error(
-            "Error fetching product data from the back-end:",
-            error
-          );
-          setProductInfo(null);
-        });
-    };
-
     Quagga.init(
       {
         inputStream: {
@@ -60,6 +40,24 @@ const BarcodeScanner = () => {
       Quagga.stop();
     };
   }, []);
+
+  const handleDetected = (data) => {
+    setBarcode(data.codeResult.code);
+    Quagga.offDetected();
+    onBarcodeDetected(data.codeResult.code);
+
+    axios
+      .post("http://localhost:3000/product/search-by-barcode", {
+        barcode: data.codeResult.code,
+      })
+      .then((response) => {
+        setProductInfo(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product data from the back-end:", error);
+        setProductInfo(null);
+      });
+  };
 
   return (
     <div className="scanner" style={{ color: "white" }}>
