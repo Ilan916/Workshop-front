@@ -3,6 +3,7 @@ import { Landing, News, Search } from './pages';
 import { BarCodeScanner } from './components';
 
 
+
 function App() {
   return (
     <Router>
