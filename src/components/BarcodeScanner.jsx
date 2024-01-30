@@ -1,4 +1,3 @@
-// Front-end code (BarcodeScanner.js)
 import React, { useState, useEffect } from "react";
 import Quagga from "quagga";
 import axios from "axios";
