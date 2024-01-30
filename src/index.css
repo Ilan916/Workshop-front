@@ -17,6 +17,9 @@ code {
     monospace;
 }
 
+nav{
+  background-color:  rgb(17 24 39 );
+}
 
 .scanner{
   display: flex;
