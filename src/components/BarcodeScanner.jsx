@@ -64,12 +64,12 @@ const BarcodeScanner = () => {
     <div className='scanner'>
       <div id="scanner-container" style={{ width: '640px', height: '480px' }} />
       {barcode && <p>Code-Barres: {barcode}</p>}
-      {productInfo && <div>
+      {productInfo && <div className='text-white'>
         <h3>Informations sur le Produit</h3>
         <p>Nom du Produit: {productInfo.product_name}</p>
         {/* Vous pouvez ajouter plus d'informations du produit ici */}
       </div>}
-      {!productInfo && barcode && <p>Aucune information trouvée pour ce produit.</p>}
+      {!productInfo && barcode && <p className='text-white'>Aucune information trouvée pour ce produit.</p>}
     </div>
   );
 };
