@@ -1,31 +1,28 @@
 import React from 'react';
+import logo from "../assets/Logo_Clair.png"
 
 export default function Footer({}) {
 
     const footerNavigation = {
         solutions: [
-          { name: 'Marketing', href: '#' },
-          { name: 'Analytics', href: '#' },
-          { name: 'Commerce', href: '#' },
-          { name: 'Insights', href: '#' },
+          { name: 'À propos de nous', href: '#' },
+          { name: 'Notre équipe', href: '#' },
+          { name: 'Blog', href: '#' },
         ],
         support: [
-          { name: 'Pricing', href: '#' },
-          { name: 'Documentation', href: '#' },
-          { name: 'Guides', href: '#' },
-          { name: 'API Status', href: '#' },
+          { name: 'Foire aux questions', href: '#' },
+          { name: 'Support technique', href: '#' },
+          { name: 'Contactez-nous', href: '#' },
         ],
         company: [
-          { name: 'About', href: '#' },
-          { name: 'Blog', href: '#' },
-          { name: 'Jobs', href: '#' },
-          { name: 'Press', href: '#' },
-          { name: 'Partners', href: '#' },
-        ],
+          { name: 'Devenez partenaire', href: '#' },
+          { name: 'Offres exclusives', href: '#' },
+          { name: 'Programme de fidélité', href: '#' },
+          ],
         legal: [
-          { name: 'Claim', href: '#' },
-          { name: 'Privacy', href: '#' },
-          { name: 'Terms', href: '#' },
+          { name: 'Politique de confidentialité', href: '#' },
+          { name: 'Mentions légales', href: '#' },
+          { name: "Conditions d'utilisation", href: '#' },
         ],
         social: [
           {
@@ -102,11 +99,11 @@ export default function Footer({}) {
         <div className="space-y-8">
           <img
             className="h-7"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+            src={logo}
             alt="Company name"
           />
           <p className="text-sm leading-6 text-gray-300">
-            Est error fuga modi error. Laborum eum nobis porro cupiditate et quo.
+            Redéfinissez votre expérience alimentaire, un code-barres à la fois!        
           </p>
           <div className="flex space-x-6">
             {footerNavigation.social.map((item) => (
@@ -120,7 +117,7 @@ export default function Footer({}) {
         <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-white">Solutions</h3>
+              <h3 className="text-sm font-semibold leading-6 text-white">Découvrir Manĝi</h3>
               <ul role="list" className="mt-6 space-y-4">
                 {footerNavigation.solutions.map((item) => (
                   <li key={item.name}>
@@ -146,7 +143,7 @@ export default function Footer({}) {
           </div>
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-white">Company</h3>
+              <h3 className="text-sm font-semibold leading-6 text-white">Partenariats et Offres </h3>
               <ul role="list" className="mt-6 space-y-4">
                 {footerNavigation.company.map((item) => (
                   <li key={item.name}>
@@ -158,7 +155,7 @@ export default function Footer({}) {
               </ul>
             </div>
             <div className="mt-10 md:mt-0">
-              <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
+              <h3 className="text-sm font-semibold leading-6 text-white">Informations légales</h3>
               <ul role="list" className="mt-6 space-y-4">
                 {footerNavigation.legal.map((item) => (
                   <li key={item.name}>
@@ -173,7 +170,7 @@ export default function Footer({}) {
         </div>
       </div>
       <div className="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-        <p className="text-xs leading-5 text-gray-400">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+        <p className="text-xs leading-5 text-gray-400">&copy; 2024 Manĝi, Inc. Tous droits réservés.</p>
       </div>
     </div>
   </footer>

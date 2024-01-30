@@ -10,6 +10,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(17 24 39 );
+  background-color: var(--base-darker-grey, #141518);
+  background: url("./assets/BG1.png")  ;
+  background-size: cover;
+  background-color: #141518;
 }
 
 code {
@@ -18,7 +22,7 @@ code {
 }
 
 nav{
-  background-color:  rgb(17 24 39 );
+  background-color: var(--base-darker-grey, #141518);
 }
 
 .scanner{
@@ -30,5 +34,9 @@ nav{
 }
 
 .container{
-  min-height: 100vh;
+  min-height: 50vh;
+}
+
+.title-h1{
+  font-weight: bolder;
 }
