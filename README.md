@@ -12,6 +12,11 @@ Bienvenue dans Mangi, votre compagnon alimentaire révolutionnaire qui vous perm
 6. **Liste de Courses Intelligente :** Générez automatiquement une liste de courses basée sur vos scans.
 7. **Suggestions de Recettes :** Recevez des idées de recettes adaptées à vos goûts uniques.
 
+## Pour Commencer
+
+1. Clonez ce dépôt : `git clone https://github.com/votre-utilisateur/mangi.git`
+2. Installez les dépendances : `npm install`
+3. Lancez l'application : `npm start`
 
 ## Rejoignez l'Aventure
 
