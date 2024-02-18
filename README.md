@@ -14,7 +14,7 @@ Bienvenue dans Mangi, votre compagnon alimentaire révolutionnaire qui vous perm
 
 ## Pour Commencer
 
-1. Clonez ce dépôt : `git clone https://github.com/votre-utilisateur/mangi.git`
+1. Clonez ce dépôt 
 2. Installez les dépendances : `npm install`
 3. Lancez l'application : `npm start`
 
